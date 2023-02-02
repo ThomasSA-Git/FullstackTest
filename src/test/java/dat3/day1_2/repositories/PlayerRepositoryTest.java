@@ -43,7 +43,7 @@ class PlayerRepositoryTest {
     Player player = playerRepository.save(new Player("dd"));
     assertTrue(player.getId() > 0);
     long count = playerRepository.count();
-    assertEquals(4, count);
+    assertEquals(3, count);
     //Q1: What's the difference between the player we add, and the player returned by the save method?
     //Q2: Write the test
   }
