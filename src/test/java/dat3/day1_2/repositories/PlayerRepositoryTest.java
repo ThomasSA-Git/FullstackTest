@@ -35,7 +35,7 @@ class PlayerRepositoryTest {
   public void testGetAll() {
     //Will this test pass, if it runs AFTER the next text
     List<Player> players = playerRepository.findAll();
-    assertEquals(4, players.size());
+    assertEquals(3, players.size());
   }
 
   @Test
@@ -43,7 +43,7 @@ class PlayerRepositoryTest {
     Player player = playerRepository.save(new Player("dd"));
     assertTrue(player.getId() > 0);
     long count = playerRepository.count();
-    assertEquals(3, count);
+    assertEquals(4, count);
     //Q1: What's the difference between the player we add, and the player returned by the save method?
     //Q2: Write the test
   }
